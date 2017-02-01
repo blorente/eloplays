@@ -7,6 +7,10 @@ var bodyParser = require('body-parser');
 
 var index = require('./routes/index');
 var users = require('./routes/users');
+var addPlay = require('./routes/add-play');
+var listPlays = require('./routes/list-plays');
+
+var PlayRepository = require('./model/PlayRepository').PlayRepository;
 
 var app = express();
 
@@ -28,8 +32,20 @@ app.use(require('node-sass-middleware')({
 }));
 app.use(express.static(path.join(__dirname, 'public')));
 
+let playRepository = new PlayRepository('localhost', 27017);
+
 app.use('/', index);
 app.use('/users', users);
+app.use('/add-play', function(req, res, next) {
+  req.playRepository = playRepository;
+  next();
+});
+app.use('/add-play', addPlay);
+app.use('/list-plays', function(req, res, next) {
+  req.playRepository = playRepository;
+  next();
+});
+app.use('/list-plays', listPlays);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

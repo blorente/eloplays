@@ -3,11 +3,13 @@ extends layout
 block content
   div.pick_side.blue_side#blue_container  
     div.content_media
-      img(src="images/testgif1.gif").content_image
+      img(src="#{blueImage}").content_image
     div.content_title
       p This is the blue content
   div.pick_side.red_side#red_container
     div.content_media
-      img(src="images/testgif1.gif").content_image
+      img(src="#{redImage}").content_image
     div.content_title
       p This is the red content
+      
+  script(src="javascripts/index.js")
