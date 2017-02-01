@@ -1,19 +1,19 @@
 {
   "name": "eloplays",
   "version": "0.0.1",
-  "description": "A simple website to find the best plays",
-  "main": "app.js",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./bin/www"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/blorente/eloplays.git"
-  },
-  "author": "Borja Lorente Escobar",
-  "license": "GPL-3.0",
-  "bugs": {
-    "url": "https://github.com/blorente/eloplays/issues"
-  },
-  "homepage": "https://github.com/blorente/eloplays#readme"
+  "dependencies": {
+    "body-parser": "~1.15.2",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.2.0",
+    "express": "~4.14.0",
+    "jade": "~1.11.0",
+    "morgan": "~1.7.0",
+    "node-sass-middleware": "0.9.8",
+    "serve-favicon": "~2.3.0",
+    "mongodb": ">= 0.9.6-7"
+  }
 }
