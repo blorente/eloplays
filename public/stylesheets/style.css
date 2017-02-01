@@ -1,8 +1,37 @@
 body {
-  padding: 50px;
+  min-height: 100%;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
 
 a {
   color: #00B7FF; }
+
+.pick_side {
+  position: fixed;
+  width: 50%;
+  min-height: 100%; }
+
+.blue_side {
+  left: 0%;
+  background-color: #0000C0; }
+
+.red_side {
+  left: 50%;
+  background-color: #C00000; }
+
+.content_media {
+  margin-top: 30%;
+  margin-left: 20%;
+  margin-right: 20%;
+  height: 20em;
+  background-color: green; }
+
+.content_image {
+  height: 100%;
+  width: 100%; }
+
+.content_title {
+  color: white;
+  margin-top: 2em;
+  text-align: center; }
 
 /*# sourceMappingURL=style.css.map */

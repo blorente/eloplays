@@ -1,6 +1,6 @@
 {
   "name": "eloplays",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "private": true,
   "scripts": {
     "start": "node ./bin/www"
@@ -13,7 +13,6 @@
     "jade": "~1.11.0",
     "morgan": "~1.7.0",
     "node-sass-middleware": "0.9.8",
-    "serve-favicon": "~2.3.0",
-    "mongodb": ">= 0.9.6-7"
+    "serve-favicon": "~2.3.0"
   }
 }
